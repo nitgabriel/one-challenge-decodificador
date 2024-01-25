@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;800&display=swap');
+
+body {
+    background-color: #F3F5FC;
+}
+
+#top-bar {
+    padding: 40px;
+}
+
+#main {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#text-input {
+    display: flex;
+    flex-direction: column;
+}
+
+#input {
+    height: 400px;
+    outline: none;
+    resize: none;
+    border: none;
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+    margin-bottom: 20px;
+}
+
+#input::placeholder {
+    color: #0A3871;
+}
+
+
+#warn {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin-bottom: 16px;
+    
+}
+
+#warn img {
+    width: 16px;
+    height: 16px;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    margin-bottom: 16px;
+}
+
+#buttons #btnCriptografar,
+#buttons #btnDescriptografar {
+    width: 328px;
+    height: 67px;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+#btnCriptografar {
+    background-color: #0A3871;
+    color: #FFF;
+}
+
+#btnDescriptografar {
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+}
+
+#text-output {
+    width: 400px;
+    height: 75vh;
+    text-align: center;
+    margin-left: 40px;
+    position: inherit;
+    box-shadow: 0px 24px 32px -8px #00000014;
+    padding: 32px;
+    border-radius: 25px;
+    background-color: #FFF;
+}
+
+#empty h1{
+    font-weight: 700;
+    gap: 16px;
+    line-height: 28.8px;
+    text-align: center;
+    color: #343A40;
+    margin-bottom: 16px;
+}
+
+#empty p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+}
+
+#empty img{
+    width: 336px;
+    height: 304px;
+}
+
+#outputTexto {
+    display: none;
+    width: 100%;
+    border: none;
+    resize: none;
+    outline: none;
+    height: 100%;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 36px;
+    color: #495057;
+}
+
+#btnCopiar {
+    display: none;
+    width: 100%;
+    height: 70px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    justify-content: center;
+    align-items: center;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    cursor: pointer;
+    position: relative;
+    top: -70px;
+}
+
+#footer {
+    justify-content: center;
+    text-align: center;
+    margin-top: 60px;
+    color: #495057;
+}
+
+@media screen and (min-width:1024px) {
+
+    #text-input {
+        position: inherit;
+    }
+
+    #text-output {
+        right: 40px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+
+    main,
+    #main {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        flex-direction: column;
+        column-gap: 15px;
+        align-items: center;
+    }
+    
+    #top-bar {
+        align-self: baseline;
+    }
+
+    #text-output {
+        position: inherit;
+        margin-bottom: 25px;
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    main,
+    #main {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        flex-direction: column;
+        column-gap: 15px;
+        align-items: center;
+    }
+    
+    #top-bar {
+        align-self: baseline;
+    }
+
+    #text-output {
+        position: inherit;
+        margin-bottom: 25px;
+        width: 80vw;
+    }
+
+
+}
+
+@media screen and (max-width:720px) {
+
+    #main{
+        margin: 0;
+        flex-direction: column;
+        row-gap: 15px;
+    }
+    #text-input{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    #text-output{
+        width: 100%;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    #btnCriptografar{
+        width: 100%;
+    }
+    #btnDescriptografar{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:550px) {
+
+    #text-input{
+        width: 75vw;
+        margin-bottom: 5%;
+    }
+
+    #text-output{
+        width: 75vw;
+    }
+
+    #empty{
+        width: 100%;
+    }
+
+    #buttons {
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+}
+
+@media screen and (max-width:410px) {
+
+    #text-input{
+        width: 75vw;
+        margin-bottom: 5%;
+    }
+
+    #text-output{
+        width: 75vw;
+    }
+
+    #empty{
+        width: 100%;
+    }
+
+    #buttons {
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+}

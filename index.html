@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./src/img/icon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="./src/styles/reset.css">
+        <link rel="stylesheet" href="./src/styles/style.css">
+        <title>Challenge - Descriptografador</title>
+    </head>
+    <body>
+        <main>
+            <section id="top-bar">
+                <img width="120" height="48" src="./src/img/logo.svg" alt="Logo alura">
+            </section>
+            <section id="main">
+                
+                <div id="text-input">
+                    <textarea id="input" placeholder="Digite seu texto aqui" maxlength="200"></textarea>
+                    <span id="warn"><img src="./src/img/info.svg" alt="Icone de aviso">Apenas letras minúsculas e sem acento.</span>
+                    <div id="buttons">
+                        <button class="col" id="btnCriptografar">Criptografar</button>
+                        <button class="col" id="btnDescriptografar">Descriptografar</button>
+                    </div>
+                </div>
+                    
+                <div id="text-output">
+                    <span id="empty"><img src="./src/img/output.svg" alt="Nenhuma saída"><h1>Nenhuma mensagem encontrada</h1>
+                        <p>Digite um texto que você deseja criptografar ou descriptografar.</p></span>
+                    <textarea id="outputTexto" readonly></textarea>
+                    <button id="btnCopiar">Copiar</button>
+                </div>
+            
+            </section>
+            <section id="footer">
+                <p>Desenvolvido por Gabriel Machado, 2024</p>
+            </section>
+        </main>
+    </body>
+    <script src="./src/scripts/app.js"></script>
+</html>
