@@ -184,6 +184,10 @@ body {
         margin-bottom: 25px;
         width: 80vw;
     }
+
+    #empty img {
+        width: 60vw;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -208,6 +212,10 @@ body {
         width: 80vw;
     }
 
+    #empty img {
+        width: 60vw;
+    }
+
 
 }
 
@@ -218,20 +226,28 @@ body {
         flex-direction: column;
         row-gap: 15px;
     }
+
     #text-input{
         width: 100%;
         margin-bottom: 5%;
     }
+
     #text-output{
         width: 100%;
         align-items: center;
         flex-wrap: nowrap;
     }
+
     #btnCriptografar{
         width: 100%;
     }
+
     #btnDescriptografar{
         width: 100%;
+    }
+
+    #empty img {
+        width: 60vw;
     }
 }
 
@@ -248,6 +264,10 @@ body {
 
     #empty{
         width: 100%;
+    }
+
+    #empty img {
+        width: 60vw;
     }
 
     #buttons {
@@ -275,6 +295,10 @@ body {
     #buttons {
         flex-direction: column;
         row-gap: 15px;
+    }
+
+    #empty img {
+        width: 60vw;
     }
 
 }
